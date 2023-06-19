@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --red: hsl(0, 100%, 74%); 
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-Blue: hsl(249, 10%, 26%); 
+    --grayish-Blue: hsl(246, 25%, 77%);
+    --box-shadow:	rgb(61, 57, 57,0.5);
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: var(--red);
+    background-image: url('./images/bg-intro-desktop.png');
+ display: flex;
+    flex-direction: column;
+}
+main{
+    padding: 100px;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1440;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+   
+    
+
+}
+.left-content{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    
+}
+.main-header{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 50px;
+    line-height: 50px;
+  
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+.left-paragraph{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    padding-bottom:50px ;
+}
+.right-content{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    
+
+    
+}
+.registration-form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    gap:20px;
+    padding: 20px;
+    
+    box-shadow: 0px 5px 10px var(--box-shadow);
+}
+.trial-btn{
+    background-color: var(--blue);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px var(--box-shadow);
+    margin-bottom: 10px;
+   
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    
+}
+.input-box{
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-style: none;
+    border: 1px solid var(--grayish-Blue);
+    font-size: 18px;
+    text-indent: 30px;
+    font-weight: 600;
+    width: 100%;
+}
+.empy-warning{
+    display: none;
+}
+.empy-warning-active{
+    display: block;
+    color: var(--red);
+    text-align: right;
+    font-size: 13px;
+}
+
+.input-box:hover{
+    border: 1px solid black;
+}
+.input-box:focus{
+    border: 2px solid black;
+    outline:none;
+}
+input[type="email"]:invalid {
+    color: var(--red);
+  
+    
+  }
+ 
+.input-container{
+    position: relative;
+}
+
+.error-icon{
+    position: absolute;
+  top: 25%;
+  right: 20px;
+ 
+  background-image: url('./images/icon-error.svg'); /* Replace with your error icon path */
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+ 
+  
+} 
+
+.submit-btn{
+    background-color: var(--green);
+    
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    
+}
+.terms-condition{
+color: lightseagreen;
+font-size: 12px;
+text-align: center;
+
+}
+.terms-condition a {
+    text-decoration: none;
+    color: var(--red);
+}
+
+
+@media (max-width:375px) {
+    .left-content{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .main-header{
+        font-size: 20px;
+        padding: 20px; 
+        line-height: 30px;
+        text-align: center;
+    }
+    .container{
+        padding: 0px;
+    }
+    main{
+        padding:15px;
+       
+    }
+    .left-paragraph{
+        text-align: center;
+        font-size: 15px;
+    }
+    .trial-btn{
+        font-weight: 400;
+    }
+    .input-box{
+        font-size: 15px;
+    }
+    .submit-btn{
+        font-size: 15px;
+        border-radius: 5px;
+       
+    }
+    .terms-condition{
+        font-size: 10px;
+        color:#b2b2b6;
+    }
+}
+
+    

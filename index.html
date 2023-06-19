@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <!-- left content -->
+        <div class="left-content">
+          <div class="main-header">Learn to code by watching others</div>
+          <div class="left-paragraph">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </div>
+        </div>
+
+        <!-- right content -->
+        <div class="right-content">
+          <div class="trial-btn">
+            <strong>Try it free 7 days </strong> then $20/mo. thereafter
+          </div>
+          <div class="right-form">
+            <form class="registration-form" onsubmit="checkField(event)">
+              <div class="input-container">
+                <input
+                  class="input-box"
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  size="15"
+                  placeholder="First Name"
+                />
+                <span id="errorFirstName"></span>
+                <p id="firstnameAlarm" class="empy-warning">
+                  First Name cannot be empty
+                </p>
+              </div>
+
+              <div class="input-container">
+                <input
+                  class="input-box"
+                  type="text"
+                  id="lastname"
+                  name="lastname"
+                  size="15"
+                  placeholder="Last Name"
+                />
+                <span id="errorLastName"></span>
+                <p id="lastnameAlarm" class="empy-warning">
+                  Last Name cannot be empty
+                </p>
+              </div>
+
+              <div class="input-container">
+                <input
+                  class="input-box"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                />
+                <span id="errorEmail"></span>
+                <p id="emailAlarm" class="empy-warning">
+                  Email cannot be empty
+                </p>
+                
+              </div>
+
+              <div class="input-container">
+                <input
+                  class="input-box"
+                  type="Password"
+                  id="repass"
+                  name="repass"
+                  placeholder="Password"
+                />
+                <span id="errorPassword"></span>
+                <p id="passwordAlarm" class="empy-warning">
+                  Password cannot be empty
+                </p>
+              </div>
+
+              <input
+                class="submit-btn"
+                type="submit"
+                value="CLAIM YOUR FREE TRIAL"
+              />
+
+              <div class="terms-condition">
+                By clicking the button, you are agreeing to our
+                <a href=""><strong>Terms and Services</strong> </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+    <script src="./index.js" />
+  </body>
+</html>
